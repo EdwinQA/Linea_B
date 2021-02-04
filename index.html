@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html>
 	<meta charset="utf-8" />
 	<head>
@@ -16,12 +16,10 @@
 	<body>
 	<div id="map"></div>
 	<script>
+	
 	var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
 	+ 'contributors', maxZoom: 18
 	});
-	
-	
-
 		
 	var map = L.map('map', {
 	center: [1.6147, -75.6068],
@@ -72,9 +70,12 @@
 	.bindPopup('Parque santander')
 	.openPopup();
 	
-	var pointA = new L.LatLng(1.6002, -75.6013); 
-	var pointB = new L.LatLng(1.6202, -75.6044); 
-	var latlngs = [pointA, pointB];
+	var pointA = new L.LatLng(1.6196024781151952, -75.59998154640198); 
+	var pointB = new L.LatLng(1.6189482804638706, -75.60068964958191); 
+	var pointC = new L.LatLng(1.6196882745128236, -75.6023955345154); 
+	var pointD = new L.LatLng(1.6199510259579297, -75.6027388572693); 
+	var pointE = new L.LatLng(1.6197955200047414, -75.60280323028564); 
+	var latlngs = [pointA, pointB, pointC, pointD, pointE];
 	var polyline = L.polyline(
 	latlngs, {color: 'red'}
 	)
